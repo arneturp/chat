@@ -1,0 +1,7 @@
+{
+    "name": "ArnieChat",
+    "description": "Test chat application with Node.js and Socket.io",
+    "repository": "https://github.com/arneturp/chat",
+    "keywords": ["node", "express", "chat"],
+    "image": "heroku/nodejs"
+}
