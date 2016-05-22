@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chatroom</title>
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+        .clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+</style>
+    </head>
+    <body>
+        <div class="username-overlay" id="username-overlay">
+            <form id="username-form">
+                <input type="text" id="username-field" placeholder="Enter a username...">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="users-pane">
+            <h1>Active users</h1>
+            <ul id="users">
+                <li>Hello</li>
+            </ul>
+        </div>
+        <div class="app">
+            <div id="messages">
+            </div>
+            <form id="messageForm">
+                <input id="message_input" autocomplete="off" autofocus="true" placeholder="Type your message..." /><button>Send</button>
+            </form>
+        </div>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+            // var socket = io();
+            // $('form').submit(function(){
+            //     socket.emit('chat message', $('#m').val());
+            //     $('#m').val('');
+            //     return false;
+            // });
+            // socket.on('chat message', function(msg){
+            //     $('#messages').append($('<li>').text(msg));
+            //     console.log(msg);
+            // });
+        </script>
+    </body>
+</html>

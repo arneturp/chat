@@ -1,0 +1,125 @@
+* {
+  font-size: 16px;
+  color: #333333;
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Source Sans Pro", sans-serif; }
+
+.users-pane {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 30%;
+  overflow: scroll;
+  box-shadow: inset -2px 0px 10px 2px rgba(0, 0, 0, 0.15); }
+  .users-pane h1 {
+    background-color: #333333;
+    text-align: center;
+    margin: 0;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #ffffff; }
+  .users-pane ul {
+    list-style-type: none;
+    padding: 0; }
+    .users-pane ul li {
+      padding: 10px 20px; }
+
+.username-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+  background: #ffffff; }
+  .username-overlay #username-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; }
+    .username-overlay #username-form #username-field {
+      font-size: 18px;
+      font-family: "Source Sans Pro", sans-serif;
+      outline: none;
+      padding-right: 0;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #d9d9d9;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      color: #333333; }
+    .username-overlay #username-form button {
+      background-color: #1abc9c;
+      color: #ffffff;
+      font-size: 16px;
+      border-radius: 20px;
+      border: none;
+      width: 100px;
+      height: 40px;
+      outline: none;
+      margin: 0 auto;
+      display: block; }
+
+.app #messages {
+  position: absolute;
+  top: 0;
+  width: 70%;
+  right: 0;
+  bottom: 52px;
+  padding: 20px;
+  overflow: scroll; }
+  .app #messages .log-status {
+    opacity: 0.5;
+    text-align: center;
+    margin-bottom: 7px; }
+  .app #messages .message {
+    padding: 7px 15px 8px;
+    float: left;
+    max-width: 70%;
+    background: #f0eded;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color: #333333;
+    line-height: 24px; }
+    .app #messages .message.own {
+      background: #1abc9c;
+      color: #ffffff;
+      float: right;
+      font-weight: light; }
+.app #messageForm {
+  position: fixed;
+  width: 70%;
+  right: 0;
+  bottom: 0;
+  padding: 10px 20px;
+  border-top: 1px solid #d9d9d9;
+  background-color: #ffffff; }
+  .app #messageForm input {
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    outline: none;
+    padding-right: 85px;
+    margin-right: -70px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    color: #333333; }
+  .app #messageForm button {
+    background-color: #1abc9c;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 15px;
+    border: none;
+    width: 70px;
+    height: 30px; }
+
+/*# sourceMappingURL=style.css.map */
